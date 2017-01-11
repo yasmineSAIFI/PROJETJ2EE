@@ -6,7 +6,7 @@ public class Person {
 	// identifiant, nom, prénom, adresse électronique, site WEB, date de
 	// naissance et mot de passe.
 
-	private int idPerson;
+	private long idPerson;
 	private String firstName;
 	private String lastName;
 	private String mail;
@@ -15,7 +15,7 @@ public class Person {
 	private String password;
 	private long idGroup;
 	
-	public Person(int idPerson, String firstName, String lastName, String mail, String webSite, Date birthDate,
+	public Person(long idPerson, String firstName, String lastName, String mail, String webSite, Date birthDate,
 			String password, long idGroup) {
 		super();
 		this.idPerson = idPerson;
@@ -28,11 +28,11 @@ public class Person {
 		this.idGroup = idGroup;
 	}
 
-	public int getIdPerson() {
+	public long getIdPerson() {
 		return idPerson;
 	}
 
-	public void setIdPerson(int idPerson) {
+	public void setIdPerson(long idPerson) {
 		this.idPerson = idPerson;
 	}
 
